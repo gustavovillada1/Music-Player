@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440CFDDD2E0C44C2005EEB93 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFDDC2E0C44C2005EEB93 /* BottomTabView.swift */; };
+		440CFDE62E0C749B005EEB93 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFDE52E0C749B005EEB93 /* HomeScreen.swift */; };
+		440CFDEC2E0CB214005EEB93 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFDE92E0CB214005EEB93 /* APIConfig.swift */; };
+		440CFDED2E0CB214005EEB93 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFDEA2E0CB214005EEB93 /* NetworkClientProtocol.swift */; };
+		440CFDEE2E0CB214005EEB93 /* DefaultNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFDEB2E0CB214005EEB93 /* DefaultNetworkClient.swift */; };
+		440CFDF12E0CB26A005EEB93 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFDF02E0CB26A005EEB93 /* AppError.swift */; };
+		440CFDF82E0CCE5A005EEB93 /* ApiDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFDF72E0CCE5A005EEB93 /* ApiDataManagerProtocol.swift */; };
+		440CFDFC2E0CCEBC005EEB93 /* TopArtistsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFDFB2E0CCEBC005EEB93 /* TopArtistsDTO.swift */; };
+		440CFDFE2E0CCEFB005EEB93 /* TopTracksDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFDFD2E0CCEFB005EEB93 /* TopTracksDTO.swift */; };
+		440CFE002E0CD18B005EEB93 /* APIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFDFF2E0CD18B005EEB93 /* APIDataManager.swift */; };
+		440CFE032E0CD26A005EEB93 /* AppRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE022E0CD26A005EEB93 /* AppRepositoryProtocol.swift */; };
+		440CFE062E0CD2CF005EEB93 /* TopTrackDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE052E0CD2CF005EEB93 /* TopTrackDomain.swift */; };
+		440CFE092E0CD337005EEB93 /* RepositoryDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE082E0CD337005EEB93 /* RepositoryDataMapper.swift */; };
+		440CFE0B2E0CD658005EEB93 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE0A2E0CD658005EEB93 /* AppRepository.swift */; };
+		440CFE0F2E0CD80B005EEB93 /* DomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE0E2E0CD80B005EEB93 /* DomainMapper.swift */; };
+		440CFE112E0CD85A005EEB93 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE102E0CD85A005EEB93 /* Track.swift */; };
+		440CFE132E0CD9BC005EEB93 /* GetTopTracksUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE122E0CD9BC005EEB93 /* GetTopTracksUseCaseProtocol.swift */; };
+		440CFE152E0CD9FA005EEB93 /* GetTopTracksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE142E0CD9FA005EEB93 /* GetTopTracksUseCase.swift */; };
+		440CFE172E0CDA4F005EEB93 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE162E0CDA4F005EEB93 /* HomeViewModel.swift */; };
+		440CFE192E0CDA76005EEB93 /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE182E0CDA76005EEB93 /* HomeViewModelProtocol.swift */; };
+		440CFE1C2E0CDFB3005EEB93 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE1B2E0CDFB3005EEB93 /* HomeWireframe.swift */; };
+		440CFE1E2E0CE184005EEB93 /* NetworkErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE1D2E0CE184005EEB93 /* NetworkErrorMapper.swift */; };
+		440CFE202E0DA0F7005EEB93 /* TrackArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE1F2E0DA0F7005EEB93 /* TrackArtist.swift */; };
+		440CFE222E0DA104005EEB93 /* TrackAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE212E0DA104005EEB93 /* TrackAlbum.swift */; };
+		440CFE252E0DA1E6005EEB93 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE242E0DA1E6005EEB93 /* MainView.swift */; };
+		440CFE282E0DA29C005EEB93 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE272E0DA29C005EEB93 /* AudioPlayerManager.swift */; };
 		449929722DCAE24500F75256 /* SpotifyCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929712DCAE24500F75256 /* SpotifyCloneApp.swift */; };
 		449929742DCAE24500F75256 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929732DCAE24500F75256 /* ContentView.swift */; };
 		449929762DCAE24700F75256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449929752DCAE24700F75256 /* Assets.xcassets */; };
@@ -14,6 +40,7 @@
 		449929832DCAE24700F75256 /* SpotifyCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929822DCAE24700F75256 /* SpotifyCloneTests.swift */; };
 		4499298D2DCAE24700F75256 /* SpotifyCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499298C2DCAE24700F75256 /* SpotifyCloneUITests.swift */; };
 		4499298F2DCAE24700F75256 /* SpotifyCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499298E2DCAE24700F75256 /* SpotifyCloneUITestsLaunchTests.swift */; };
+		44F884182DFE3EDD0090561D /* SwiftUIComponentsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 44F884172DFE3EDD0090561D /* SwiftUIComponentsKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +61,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		440CFDDC2E0C44C2005EEB93 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
+		440CFDE52E0C749B005EEB93 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		440CFDE92E0CB214005EEB93 /* APIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		440CFDEA2E0CB214005EEB93 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
+		440CFDEB2E0CB214005EEB93 /* DefaultNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNetworkClient.swift; sourceTree = "<group>"; };
+		440CFDF02E0CB26A005EEB93 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		440CFDF72E0CCE5A005EEB93 /* ApiDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDataManagerProtocol.swift; sourceTree = "<group>"; };
+		440CFDFB2E0CCEBC005EEB93 /* TopArtistsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtistsDTO.swift; sourceTree = "<group>"; };
+		440CFDFD2E0CCEFB005EEB93 /* TopTracksDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTracksDTO.swift; sourceTree = "<group>"; };
+		440CFDFF2E0CD18B005EEB93 /* APIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataManager.swift; sourceTree = "<group>"; };
+		440CFE022E0CD26A005EEB93 /* AppRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepositoryProtocol.swift; sourceTree = "<group>"; };
+		440CFE052E0CD2CF005EEB93 /* TopTrackDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTrackDomain.swift; sourceTree = "<group>"; };
+		440CFE082E0CD337005EEB93 /* RepositoryDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDataMapper.swift; sourceTree = "<group>"; };
+		440CFE0A2E0CD658005EEB93 /* AppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
+		440CFE0E2E0CD80B005EEB93 /* DomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainMapper.swift; sourceTree = "<group>"; };
+		440CFE102E0CD85A005EEB93 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		440CFE122E0CD9BC005EEB93 /* GetTopTracksUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopTracksUseCaseProtocol.swift; sourceTree = "<group>"; };
+		440CFE142E0CD9FA005EEB93 /* GetTopTracksUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopTracksUseCase.swift; sourceTree = "<group>"; };
+		440CFE162E0CDA4F005EEB93 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		440CFE182E0CDA76005EEB93 /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
+		440CFE1B2E0CDFB3005EEB93 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		440CFE1D2E0CE184005EEB93 /* NetworkErrorMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorMapper.swift; sourceTree = "<group>"; };
+		440CFE1F2E0DA0F7005EEB93 /* TrackArtist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackArtist.swift; sourceTree = "<group>"; };
+		440CFE212E0DA104005EEB93 /* TrackAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAlbum.swift; sourceTree = "<group>"; };
+		440CFE242E0DA1E6005EEB93 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		440CFE272E0DA29C005EEB93 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		4499296E2DCAE24500F75256 /* SpotifyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		449929712DCAE24500F75256 /* SpotifyCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCloneApp.swift; sourceTree = "<group>"; };
 		449929732DCAE24500F75256 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F884182DFE3EDD0090561D /* SwiftUIComponentsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +125,212 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		440CFDDA2E0C448D005EEB93 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		440CFDDB2E0C4498005EEB93 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE232E0DA1D3005EEB93 /* Main */,
+				440CFDDE2E0C5D00005EEB93 /* Entities */,
+				440CFDDF2E0C7433005EEB93 /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		440CFDDE2E0C5D00005EEB93 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE102E0CD85A005EEB93 /* Track.swift */,
+				440CFE1F2E0DA0F7005EEB93 /* TrackArtist.swift */,
+				440CFE212E0DA104005EEB93 /* TrackAlbum.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		440CFDDF2E0C7433005EEB93 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE1A2E0CDFA4005EEB93 /* Wireframe */,
+				440CFDE42E0C7484005EEB93 /* ViewModel */,
+				440CFDE32E0C7454005EEB93 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		440CFDE32E0C7454005EEB93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				440CFDE52E0C749B005EEB93 /* HomeScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		440CFDE42E0C7484005EEB93 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE162E0CDA4F005EEB93 /* HomeViewModel.swift */,
+				440CFE182E0CDA76005EEB93 /* HomeViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		440CFDE82E0CB1D8005EEB93 /* API Config */ = {
+			isa = PBXGroup;
+			children = (
+				440CFDE92E0CB214005EEB93 /* APIConfig.swift */,
+				440CFDEB2E0CB214005EEB93 /* DefaultNetworkClient.swift */,
+				440CFDEA2E0CB214005EEB93 /* NetworkClientProtocol.swift */,
+			);
+			path = "API Config";
+			sourceTree = "<group>";
+		};
+		440CFDEF2E0CB25C005EEB93 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				440CFDF02E0CB26A005EEB93 /* AppError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		440CFDF22E0CCD83005EEB93 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE072E0CD317005EEB93 /* Mapper */,
+				440CFE012E0CD258005EEB93 /* Repository */,
+				440CFDF92E0CCE8F005EEB93 /* Entities */,
+				440CFDF42E0CCDC5005EEB93 /* DataManager */,
+				440CFDEF2E0CB25C005EEB93 /* Errors */,
+				440CFDE82E0CB1D8005EEB93 /* API Config */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		440CFDF32E0CCD8A005EEB93 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE0D2E0CD7FE005EEB93 /* UseCases */,
+				440CFE0C2E0CD7FB005EEB93 /* Mapper */,
+				440CFE042E0CD2A7005EEB93 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		440CFDF42E0CCDC5005EEB93 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				440CFDF62E0CCDD0005EEB93 /* API */,
+				440CFDF52E0CCDCB005EEB93 /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		440CFDF52E0CCDCB005EEB93 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		440CFDF62E0CCDD0005EEB93 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				440CFDF72E0CCE5A005EEB93 /* ApiDataManagerProtocol.swift */,
+				440CFDFF2E0CD18B005EEB93 /* APIDataManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		440CFDF92E0CCE8F005EEB93 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				440CFDFA2E0CCEB1005EEB93 /* DTO */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		440CFDFA2E0CCEB1005EEB93 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				440CFDFB2E0CCEBC005EEB93 /* TopArtistsDTO.swift */,
+				440CFDFD2E0CCEFB005EEB93 /* TopTracksDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		440CFE012E0CD258005EEB93 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE022E0CD26A005EEB93 /* AppRepositoryProtocol.swift */,
+				440CFE0A2E0CD658005EEB93 /* AppRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		440CFE042E0CD2A7005EEB93 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE052E0CD2CF005EEB93 /* TopTrackDomain.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		440CFE072E0CD317005EEB93 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE1D2E0CE184005EEB93 /* NetworkErrorMapper.swift */,
+				440CFE082E0CD337005EEB93 /* RepositoryDataMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		440CFE0C2E0CD7FB005EEB93 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE0E2E0CD80B005EEB93 /* DomainMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		440CFE0D2E0CD7FE005EEB93 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE122E0CD9BC005EEB93 /* GetTopTracksUseCaseProtocol.swift */,
+				440CFE142E0CD9FA005EEB93 /* GetTopTracksUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		440CFE1A2E0CDFA4005EEB93 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE1B2E0CDFB3005EEB93 /* HomeWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		440CFE232E0DA1D3005EEB93 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE262E0DA289005EEB93 /* ViewModel */,
+				440CFDDC2E0C44C2005EEB93 /* BottomTabView.swift */,
+				440CFE242E0DA1E6005EEB93 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		440CFE262E0DA289005EEB93 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE272E0DA29C005EEB93 /* AudioPlayerManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		449929652DCAE24500F75256 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +354,10 @@
 		449929702DCAE24500F75256 /* SpotifyClone */ = {
 			isa = PBXGroup;
 			children = (
+				440CFDF22E0CCD83005EEB93 /* Data */,
+				440CFDF32E0CCD8A005EEB93 /* Domain */,
+				440CFDDB2E0C4498005EEB93 /* Presentation */,
+				440CFDDA2E0C448D005EEB93 /* Common */,
 				449929712DCAE24500F75256 /* SpotifyCloneApp.swift */,
 				449929732DCAE24500F75256 /* ContentView.swift */,
 				449929752DCAE24700F75256 /* Assets.xcassets */,
@@ -143,6 +407,9 @@
 			dependencies = (
 			);
 			name = SpotifyClone;
+			packageProductDependencies = (
+				44F884172DFE3EDD0090561D /* SwiftUIComponentsKit */,
+			);
 			productName = SpotifyClone;
 			productReference = 4499296E2DCAE24500F75256 /* SpotifyClone.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +482,9 @@
 				Base,
 			);
 			mainGroup = 449929652DCAE24500F75256;
+			packageReferences = (
+				44F884162DFE3EDD0090561D /* XCRemoteSwiftPackageReference "MediaPlayerSwiftUIComponents" */,
+			);
 			productRefGroup = 4499296F2DCAE24500F75256 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +527,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440CFE152E0CD9FA005EEB93 /* GetTopTracksUseCase.swift in Sources */,
+				440CFE0F2E0CD80B005EEB93 /* DomainMapper.swift in Sources */,
+				440CFDFE2E0CCEFB005EEB93 /* TopTracksDTO.swift in Sources */,
+				440CFE092E0CD337005EEB93 /* RepositoryDataMapper.swift in Sources */,
+				440CFE062E0CD2CF005EEB93 /* TopTrackDomain.swift in Sources */,
+				440CFDFC2E0CCEBC005EEB93 /* TopArtistsDTO.swift in Sources */,
+				440CFE112E0CD85A005EEB93 /* Track.swift in Sources */,
+				440CFE282E0DA29C005EEB93 /* AudioPlayerManager.swift in Sources */,
+				440CFE1C2E0CDFB3005EEB93 /* HomeWireframe.swift in Sources */,
+				440CFE192E0CDA76005EEB93 /* HomeViewModelProtocol.swift in Sources */,
+				440CFDE62E0C749B005EEB93 /* HomeScreen.swift in Sources */,
+				440CFDF82E0CCE5A005EEB93 /* ApiDataManagerProtocol.swift in Sources */,
 				449929742DCAE24500F75256 /* ContentView.swift in Sources */,
+				440CFDEE2E0CB214005EEB93 /* DefaultNetworkClient.swift in Sources */,
 				449929722DCAE24500F75256 /* SpotifyCloneApp.swift in Sources */,
+				440CFE032E0CD26A005EEB93 /* AppRepositoryProtocol.swift in Sources */,
+				440CFDF12E0CB26A005EEB93 /* AppError.swift in Sources */,
+				440CFE132E0CD9BC005EEB93 /* GetTopTracksUseCaseProtocol.swift in Sources */,
+				440CFDDD2E0C44C2005EEB93 /* BottomTabView.swift in Sources */,
+				440CFE172E0CDA4F005EEB93 /* HomeViewModel.swift in Sources */,
+				440CFE252E0DA1E6005EEB93 /* MainView.swift in Sources */,
+				440CFDEC2E0CB214005EEB93 /* APIConfig.swift in Sources */,
+				440CFE1E2E0CE184005EEB93 /* NetworkErrorMapper.swift in Sources */,
+				440CFE002E0CD18B005EEB93 /* APIDataManager.swift in Sources */,
+				440CFDED2E0CB214005EEB93 /* NetworkClientProtocol.swift in Sources */,
+				440CFE222E0DA104005EEB93 /* TrackAlbum.swift in Sources */,
+				440CFE0B2E0CD658005EEB93 /* AppRepository.swift in Sources */,
+				440CFE202E0DA0F7005EEB93 /* TrackArtist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +878,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44F884162DFE3EDD0090561D /* XCRemoteSwiftPackageReference "MediaPlayerSwiftUIComponents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gustavovillada1/MediaPlayerSwiftUIComponents";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44F884172DFE3EDD0090561D /* SwiftUIComponentsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44F884162DFE3EDD0090561D /* XCRemoteSwiftPackageReference "MediaPlayerSwiftUIComponents" */;
+			productName = SwiftUIComponentsKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 449929662DCAE24500F75256 /* Project object */;
 }

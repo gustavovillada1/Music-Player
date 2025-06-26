@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mediaplayerswiftuicomponents",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gustavovillada1/MediaPlayerSwiftUIComponents",
+      "state" : {
+        "branch" : "main",
+        "revision" : "06e0e9b6e1ec2e7e3b0373e88129e3a38f08b2c0"
+      }
+    }
+  ],
+  "version" : 2
+}
