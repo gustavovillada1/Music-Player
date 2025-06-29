@@ -9,10 +9,11 @@ import Foundation
 import Combine
 
 class HomeViewModel: HomeViewModelProtocol {
+    var topTracksState: ScreenState<[Track]> = .idle
+    
     
     @Published var topTracks: [Track] = []
     @Published var isLoadingTopTracks: Bool = true
-
 
     private var cancellables: Set<AnyCancellable> = Set<AnyCancellable>()
     var getTopTracksUseCase: GetTopTracksUseCaseProtocol

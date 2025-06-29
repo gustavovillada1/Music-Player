@@ -12,29 +12,29 @@ struct RepositoryDataMapper {
     func mapTopTracksDomain(topTracksDTO: TopTracksDTO) -> [TopTracksDomain] {
         return topTracksDTO.data.map { track in
             TopTracksDomain(
-                id: track.id,
-                title: track.title,
-                link: track.link,
-                preview: track.preview,
-                artist: mapTopTracksDataArtistDomain(artistDTO: track.artist),
-                album: mapTopTrackDataAlbumDomain(albumDTO: track.album)
+                id: track.id ?? String(),
+                title: track.title ?? String(),
+                link: String(),
+                preview: String(),
+                artist: mapTopTracksDataArtistDomain(artistDTO: track.user!),
+                album: mapTopTrackDataAlbumDomain(albumDTO: track.artwork!)
             )
         }
     }
     
     private func mapTopTracksDataArtistDomain(artistDTO: TopTracksDataArtistDTO) -> TopTracksDataArtistDomain {
         return TopTracksDataArtistDomain(
-            id: artistDTO.id, 
-            name: artistDTO.name,
-            picture: artistDTO.picture
+            id: artistDTO.id ?? String(),
+            name: artistDTO.name ?? String(),
+            picture: artistDTO.coverPhoto?.smallPicture ?? String()
         )
     }
     
-    private func mapTopTrackDataAlbumDomain(albumDTO: TopTrackDataAlbumDTO) -> TopTrackDataAlbumDomain {
+    private func mapTopTrackDataAlbumDomain(albumDTO: TopTracksDataArtWorkDTO) -> TopTrackDataAlbumDomain {
         return TopTrackDataAlbumDomain(
-            id: albumDTO.id, 
-            title: albumDTO.title,
-            cover: albumDTO.cover
+            id: String(),
+            title: String(),
+            cover: albumDTO.mediumPicture ?? String()
         )
     }
 }

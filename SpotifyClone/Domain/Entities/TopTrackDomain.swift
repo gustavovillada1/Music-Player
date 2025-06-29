@@ -8,7 +8,7 @@
 import Foundation
 
 struct TopTracksDomain {
-    let id: Int
+    let id: String
     let title: String
     let link: String
     let preview: String
@@ -17,13 +17,13 @@ struct TopTracksDomain {
 }
 
 struct TopTracksDataArtistDomain {
-    let id: Int
+    let id: String
     let name: String
     let picture: String
 }
 
 struct TopTrackDataAlbumDomain {
-    let id: Int
+    let id: String
     let title: String
     let cover: String
 }

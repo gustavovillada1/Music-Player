@@ -27,9 +27,10 @@ class HomeWireframe {
     private static func createViewModel() ->  HomeViewModel {
         let networkClient: DefaultNetworkClient = DefaultNetworkClient()
         let dataMapper: RepositoryDataMapper = RepositoryDataMapper()
+        let networkMapper: NetworkErrorMapper = NetworkErrorMapper()
         let apiManager: ApiDataManagerProtocol = APIDataManager(networkClient: networkClient)
         let domainMapper: DomainMapper = DomainMapper()
-        let repository: AppRepositoryProtocol = AppRepository(apiManager: apiManager, dataMapper: dataMapper)
+        let repository: AppRepositoryProtocol = AppRepository(apiManager: apiManager, dataMapper: dataMapper, networkMapper: networkMapper)
         let getTopTracksUseCase: GetTopTracksUseCaseProtocol = GetTopTracksUseCase(repository: repository, domainMapper: domainMapper)
         
         return HomeViewModel(getTopTracksUseCase: getTopTracksUseCase)

@@ -33,6 +33,8 @@
 		440CFE222E0DA104005EEB93 /* TrackAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE212E0DA104005EEB93 /* TrackAlbum.swift */; };
 		440CFE252E0DA1E6005EEB93 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE242E0DA1E6005EEB93 /* MainView.swift */; };
 		440CFE282E0DA29C005EEB93 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE272E0DA29C005EEB93 /* AudioPlayerManager.swift */; };
+		440CFE2F2E0DE63E005EEB93 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CFE2E2E0DE63E005EEB93 /* MainWireframe.swift */; };
+		445B67492E10C13E0073DC64 /* ScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B67482E10C13E0073DC64 /* ScreenState.swift */; };
 		449929722DCAE24500F75256 /* SpotifyCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929712DCAE24500F75256 /* SpotifyCloneApp.swift */; };
 		449929742DCAE24500F75256 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929732DCAE24500F75256 /* ContentView.swift */; };
 		449929762DCAE24700F75256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449929752DCAE24700F75256 /* Assets.xcassets */; };
@@ -87,6 +89,8 @@
 		440CFE212E0DA104005EEB93 /* TrackAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAlbum.swift; sourceTree = "<group>"; };
 		440CFE242E0DA1E6005EEB93 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		440CFE272E0DA29C005EEB93 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		440CFE2E2E0DE63E005EEB93 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		445B67482E10C13E0073DC64 /* ScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenState.swift; sourceTree = "<group>"; };
 		4499296E2DCAE24500F75256 /* SpotifyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		449929712DCAE24500F75256 /* SpotifyCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCloneApp.swift; sourceTree = "<group>"; };
 		449929732DCAE24500F75256 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,8 +139,9 @@
 		440CFDDB2E0C4498005EEB93 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				440CFE232E0DA1D3005EEB93 /* Main */,
+				445B67472E109E3E0073DC64 /* Common */,
 				440CFDDE2E0C5D00005EEB93 /* Entities */,
+				440CFE232E0DA1D3005EEB93 /* Main */,
 				440CFDDF2E0C7433005EEB93 /* Home */,
 			);
 			path = Presentation;
@@ -316,6 +321,7 @@
 		440CFE232E0DA1D3005EEB93 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				440CFE2D2E0DE62E005EEB93 /* Wireframe */,
 				440CFE262E0DA289005EEB93 /* ViewModel */,
 				440CFDDC2E0C44C2005EEB93 /* BottomTabView.swift */,
 				440CFE242E0DA1E6005EEB93 /* MainView.swift */,
@@ -329,6 +335,22 @@
 				440CFE272E0DA29C005EEB93 /* AudioPlayerManager.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		440CFE2D2E0DE62E005EEB93 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				440CFE2E2E0DE63E005EEB93 /* MainWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		445B67472E109E3E0073DC64 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				445B67482E10C13E0073DC64 /* ScreenState.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		449929652DCAE24500F75256 = {
@@ -545,12 +567,14 @@
 				440CFE032E0CD26A005EEB93 /* AppRepositoryProtocol.swift in Sources */,
 				440CFDF12E0CB26A005EEB93 /* AppError.swift in Sources */,
 				440CFE132E0CD9BC005EEB93 /* GetTopTracksUseCaseProtocol.swift in Sources */,
+				440CFE2F2E0DE63E005EEB93 /* MainWireframe.swift in Sources */,
 				440CFDDD2E0C44C2005EEB93 /* BottomTabView.swift in Sources */,
 				440CFE172E0CDA4F005EEB93 /* HomeViewModel.swift in Sources */,
 				440CFE252E0DA1E6005EEB93 /* MainView.swift in Sources */,
 				440CFDEC2E0CB214005EEB93 /* APIConfig.swift in Sources */,
 				440CFE1E2E0CE184005EEB93 /* NetworkErrorMapper.swift in Sources */,
 				440CFE002E0CD18B005EEB93 /* APIDataManager.swift in Sources */,
+				445B67492E10C13E0073DC64 /* ScreenState.swift in Sources */,
 				440CFDED2E0CB214005EEB93 /* NetworkClientProtocol.swift in Sources */,
 				440CFE222E0DA104005EEB93 /* TrackAlbum.swift in Sources */,
 				440CFE0B2E0CD658005EEB93 /* AppRepository.swift in Sources */,
@@ -718,6 +742,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpotifyClone/Preview Content\"";
+				DEVELOPMENT_TEAM = TJQTC4Z365;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -746,6 +771,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpotifyClone/Preview Content\"";
+				DEVELOPMENT_TEAM = TJQTC4Z365;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

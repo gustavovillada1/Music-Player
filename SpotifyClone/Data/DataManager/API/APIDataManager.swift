@@ -9,9 +9,10 @@ import Foundation
 import Combine
 
 class APIDataManager: ApiDataManagerProtocol {
+
     private let networkClient: NetworkClientProtocol
     
-    private let topTracksPath = "/chart/0/tracks"
+    private let topTracksPath = "/tracks/trending"
     private let topArtistsPath = "/chart/0/artists"
 
 

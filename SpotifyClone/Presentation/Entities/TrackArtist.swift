@@ -8,7 +8,7 @@
 import Foundation
 
 struct TrackArtist {
-    let id: Int
+    let id: String
     let name: String
     let picture: String
 }

@@ -12,5 +12,8 @@ protocol HomeViewModelProtocol: ObservableObject {
     var topTracks: [Track] { get set }
     var isLoadingTopTracks: Bool { get set }
     
-    func onAppear() 
+    // MARK: State screen
+    var topTracksState: ScreenState<[Track]> { get set }
+    
+    func onAppear()
 }

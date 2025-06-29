@@ -10,7 +10,8 @@ import SwiftUIComponentsKit
 
 struct HomeScreen<ViewModel: HomeViewModelProtocol>: View {
     @StateObject var viewModel: ViewModel
-
+    @EnvironmentObject var playerManager: AudioPlayerManager
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack {
@@ -41,7 +42,16 @@ struct HomeScreen<ViewModel: HomeViewModelProtocol>: View {
                                 imageURL: track.album.cover,
                                 title: track.title,
                                 subtitle: track.artist.name,
-                                style: .large, action: {}
+                                style: .large, 
+                                isPlaying: track.id == playerManager.currentTrackId,
+                                action: {
+                                    withAnimation {
+                                        playerManager.isExpanded = true
+                                        playerManager.play(trackId: track.id)
+                                        playerManager.setTrackPlaying(track: track)
+                                        playerManager.setAudioManagerPlayList(tracks: viewModel.topTracks)
+                                    }
+                                }
                             )
                         }
                     }

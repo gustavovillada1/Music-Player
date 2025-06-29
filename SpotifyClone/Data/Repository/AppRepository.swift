@@ -9,12 +9,15 @@ import Foundation
 import Combine
 
 class AppRepository: AppRepositoryProtocol {
+    
     private let apiManager: ApiDataManagerProtocol
     private let dataMapper: RepositoryDataMapper
+    private let networkMapper: NetworkErrorMapper
     
-    init(apiManager: ApiDataManagerProtocol, dataMapper: RepositoryDataMapper) {
+    init(apiManager: ApiDataManagerProtocol, dataMapper: RepositoryDataMapper, networkMapper: NetworkErrorMapper) {
         self.apiManager = apiManager
         self.dataMapper = dataMapper
+        self.networkMapper = networkMapper
     }
     
     func getTopArtist() -> AnyPublisher<TopArtistsDTO, AppError> {

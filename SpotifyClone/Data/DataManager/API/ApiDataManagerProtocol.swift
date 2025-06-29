@@ -12,5 +12,4 @@ protocol ApiDataManagerProtocol {
     func getTopArtist() -> AnyPublisher<TopArtistsDTO, AppError>
     
     func getTopTracks() -> AnyPublisher<TopTracksDTO, AppError>
-
 }

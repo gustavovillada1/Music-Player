@@ -12,22 +12,44 @@ struct TopTracksDTO: Decodable {
 }
 
 struct TopTracksDataDTO: Decodable {
-    let id: Int
-    let title: String
-    let link: String
-    let preview: String
-    let artist: TopTracksDataArtistDTO
-    let album: TopTrackDataAlbumDTO
+    let id: String?
+    let genre: String?
+    let title: String?
+    let artwork: TopTracksDataArtWorkDTO?
+    let user: TopTracksDataArtistDTO?
+}
+
+struct TopTracksDataArtWorkDTO: Decodable {
+    let smallPicture: String?
+    let mediumPicture: String?
+    let bigPicture: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case smallPicture = "150x150"
+        case mediumPicture = "480x480"
+        case bigPicture = "1000x1000"
+    }
 }
 
 struct TopTracksDataArtistDTO: Decodable {
-    let id: Int
-    let name: String
-    let picture: String
+    let id: String?
+    let name: String?
+    let coverPhoto: TopTracksDataArtistCoverPhotoDTO?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case coverPhoto = "cover_photo"
+    }
 }
 
-struct TopTrackDataAlbumDTO: Decodable {
-    let id: Int
-    let title: String
-    let cover: String
+struct TopTracksDataArtistCoverPhotoDTO: Decodable {
+    let smallPicture: String?
+    let bigPicture: String?
+
+    enum CodingKeys: String, CodingKey {
+        case smallPicture = "640x"
+        case bigPicture = "2000x"
+    }
 }
+

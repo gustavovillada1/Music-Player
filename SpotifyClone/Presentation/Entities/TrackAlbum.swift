@@ -8,7 +8,7 @@
 import Foundation
 
 struct TrackAlbum {
-    let id: Int
+    let id: String
     let title: String
     let cover: String
 }

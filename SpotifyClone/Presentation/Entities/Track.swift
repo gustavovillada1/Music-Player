@@ -8,7 +8,7 @@
 import Foundation
 
 struct Track {
-    let id: Int
+    let id: String
     let title: String
     let link: String
     let preview: String
