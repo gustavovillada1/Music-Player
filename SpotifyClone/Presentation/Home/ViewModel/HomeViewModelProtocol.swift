@@ -8,12 +8,17 @@
 import Foundation
 
 protocol HomeViewModelProtocol: ObservableObject {
+    
+    // MARK: Use cases
     var getTopTracksUseCase: GetTopTracksUseCaseProtocol { get }
-    var topTracks: [Track] { get set }
-    var isLoadingTopTracks: Bool { get set }
+    var getTopArtistsUseCase: GetTopArtistsUseCaseProtocol { get }
+    var getTopPlayListsUseCase: GetTopPlayListsUseCaseProtocol { get }
+    var playListIdSelected: Int { get set }
     
     // MARK: State screen
-    var topTracksState: ScreenState<[Track]> { get set }
-    
+    var topTracksState: ScreenState<[TopTrack]> { get set }
+    var topArtistsState: ScreenState<[TopArtist]> { get set }
+    var topPlayListsState: ScreenState<[TopPlayList]> { get set }
+
     func onAppear()
 }

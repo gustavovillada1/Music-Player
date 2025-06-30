@@ -38,10 +38,18 @@ class DefaultNetworkClient: NetworkClientProtocol {
         request.httpMethod = method
         request.allHTTPHeaderFields = APIConfig.defaultHeaders.merging(headers ?? [:]) { (current, new) in new }
         let statusCodeMapper = HTTPStatusCodeMapper()
-        
         return session.dataTaskPublisher(for: request)
-            .tryMap { output in // recordar que acá viene el .response es la respuesta http y lo otro la data
+            .tryMap { output in
+                // Validar el código de estado HTTP
                 _ = try statusCodeMapper.map(output.response)
+                
+                // Imprimir la respuesta como String para debug
+                if let jsonString = String(data: output.data, encoding: .utf8) {
+                    print("🔵 Response JSON:\n\(jsonString)")
+                } else {
+                    print("🟠 No se pudo convertir la data en String.")
+                }
+                
                 return output.data
             }
             .decode(type: T.self, decoder: JSONDecoder())

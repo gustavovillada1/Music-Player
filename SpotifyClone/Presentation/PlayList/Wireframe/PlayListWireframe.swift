@@ -1,30 +1,28 @@
 //
-//  MainWireframe.swift
+//  PlayListWireframe.swift
 //  SpotifyClone
 //
-//  Created by Gustavo Adolfo Villada Molina on 26/06/25.
+//  Created by Gustavo Adolfo Villada Molina on 29/06/25.
 //
 
 import Foundation
 import SwiftUI
 
-class MainWireframe {
+class PlayListWireframe {
     @ViewBuilder
-    public static func getMainView() -> some View {
-        let navigation: AppNavigation = AppNavigation()
-        let playerManager: AudioPlayerManager = AudioPlayerManager()
-        let viewModel: MainViewModel = createViewModel(playerManager: playerManager)
-        let rootView: MainView = MainView(viewModel: viewModel)
+    public static func getPlayListView(playListId: Int) -> some View {
+        let viewModel: PlayListViewModel = createViewModel(playListId: playListId)
+        let rootView: PlayListScreen = PlayListScreen(viewModel: viewModel)
         
         NavigationView {
             rootView
         }
-        .environmentObject(navigation)
+        //.environmentObject(navigation)
         .navigationBarHidden(true)
         .navigationViewStyle(StackNavigationViewStyle())
     }
     
-    private static func createViewModel(playerManager: AudioPlayerManager) -> MainViewModel {
+    private static func createViewModel(playListId: Int) -> PlayListViewModel {
         let networkClient: NetworkClientProtocol = DefaultNetworkClient()
         let apiManager: ApiDataManagerProtocol = APIDataManager(networkClient: networkClient)
         let domainMapper: DomainMapper = DomainMapper()
@@ -35,10 +33,10 @@ class MainWireframe {
             dataMapper: dataMapper,
             networkMapper: networkMapper
         )
-        let getTrackDetailUseCase: GetTrackDetailUseCaseProtocol = GetTrackDetailUseCase(
+        let getPlayListDetailUseCase: GetPlayListDetailUseCase = GetPlayListDetailUseCase(
             repository: repository,
             domainMapper: domainMapper
         )
-        return MainViewModel(getTrackDetailUseCase: getTrackDetailUseCase, playerManager: playerManager)
+        return PlayListViewModel(getPlayLisDetailtUseCase: getPlayListDetailUseCase, playListId: playListId)
     }
 }

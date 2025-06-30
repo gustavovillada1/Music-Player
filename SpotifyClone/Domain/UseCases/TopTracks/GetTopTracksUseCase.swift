@@ -17,7 +17,7 @@ class GetTopTracksUseCase: GetTopTracksUseCaseProtocol {
         self.domainMapper = domainMapper
     }
     
-    func execute() -> AnyPublisher<[Track], AppError> {
+    func execute() -> AnyPublisher<[TopTrack], AppError> {
         repository.getTopTracks()
             .map(domainMapper.mapTopTracks)
             .eraseToAnyPublisher()

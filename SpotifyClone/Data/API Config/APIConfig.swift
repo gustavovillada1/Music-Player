@@ -10,11 +10,11 @@ import Foundation
 struct APIConfig {
     
     /// The base URL for the Mercado Libre API.
-    static let baseURL = "https://discoveryprovider.audius.co/v1"
+    static let baseURL = "https://api.deezer.com"
     
     /// Default HTTP headers to include in every request.
-    static let defaultHeaders: [String: String] = [:
-        //"Content-Type": "application/json",
-        //"Accept": "application/json"
+    static let defaultHeaders: [String: String] = [
+        "Content-Type": "application/json",
+        "Accept": "application/json"
     ]
 }

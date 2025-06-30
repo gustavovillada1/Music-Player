@@ -9,5 +9,5 @@ import Foundation
 import Combine
 
 protocol GetTopTracksUseCaseProtocol {
-    func execute() -> AnyPublisher<[Track], AppError>
+    func execute() -> AnyPublisher<[TopTrack], AppError>
 }

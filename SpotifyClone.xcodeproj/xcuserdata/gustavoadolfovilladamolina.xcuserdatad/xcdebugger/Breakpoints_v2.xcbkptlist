@@ -3,4 +3,197 @@
    uuid = "CA63207D-0015-49CB-970C-7120D4B319E7"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "973ECB93-7B92-47C1-9BCD-E92290378836"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpotifyClone/Data/DataManager/API/APIDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getTopTracks()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "973ECB93-7B92-47C1-9BCD-E92290378836 - 4ea7d693d2347d61"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpotifyClone.APIDataManager.getTopTracks() -&gt; Combine.AnyPublisher&lt;SpotifyClone.TopTracksDTO, SpotifyClone.AppError&gt;"
+                  moduleName = "SpotifyClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavoadolfovilladamolina/Documents/Apps/SpotifyClone/SpotifyClone/Data/DataManager/API/APIDataManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "973ECB93-7B92-47C1-9BCD-E92290378836 - 4ea7d693d2347d1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpotifyClone.APIDataManager.getTopTracks() -&gt; Combine.AnyPublisher&lt;SpotifyClone.TopTracksDTO, SpotifyClone.AppError&gt;"
+                  moduleName = "SpotifyClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavoadolfovilladamolina/Documents/Apps/SpotifyClone/SpotifyClone/Data/DataManager/API/APIDataManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "973ECB93-7B92-47C1-9BCD-E92290378836 - 4ea7d693d2347d3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpotifyClone.APIDataManager.getTopTracks() -&gt; Combine.AnyPublisher&lt;SpotifyClone.TopTracksDTO, SpotifyClone.AppError&gt;"
+                  moduleName = "SpotifyClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavoadolfovilladamolina/Documents/Apps/SpotifyClone/SpotifyClone/Data/DataManager/API/APIDataManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B158CEFF-AA13-4DAC-AAFA-5933EAB348FB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpotifyClone/Presentation/Home/View/HomeScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "topTracksView"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "B158CEFF-AA13-4DAC-AAFA-5933EAB348FB - e6c76b882ee39b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in closure #1 (SpotifyClone.TopTrack) -&gt; SwiftUIComponentsKit.ListHorizontalItem in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;SpotifyClone.TopTrack&gt;, Swift.Int, SwiftUIComponentsKit.ListHorizontalItem&gt; in closure #1 () -&gt; SwiftUI.LazyHStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SpotifyClone.TopTrack&gt;, Swift.Int, SwiftUIComponentsKit.ListHorizontalItem&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;SwiftUI.Text, SwiftUI.Text&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text&gt;&gt;)&gt; in SpotifyClone.HomeScreen.topTracksView.getter : some"
+                  moduleName = "SpotifyClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavoadolfovilladamolina/Documents/Apps/SpotifyClone/SpotifyClone/Presentation/Home/View/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "B158CEFF-AA13-4DAC-AAFA-5933EAB348FB - e6c76b882ee39bff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in closure #1 (SpotifyClone.TopTrack) -&gt; SwiftUIComponentsKit.ListHorizontalItem in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;SpotifyClone.TopTrack&gt;, Swift.Int, SwiftUIComponentsKit.ListHorizontalItem&gt; in closure #1 () -&gt; SwiftUI.LazyHStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;SpotifyClone.TopTrack&gt;, Swift.Int, SwiftUIComponentsKit.ListHorizontalItem&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;SwiftUI.Text, SwiftUI.Text&gt;, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text&gt;&gt;)&gt; in SpotifyClone.HomeScreen.topTracksView.getter : some"
+                  moduleName = "SpotifyClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavoadolfovilladamolina/Documents/Apps/SpotifyClone/SpotifyClone/Presentation/Home/View/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05CD8234-0CC2-47F8-8EE2-9BAC20AF382A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpotifyClone/Presentation/Main/MainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "extraContentView"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44FD946A-E32C-4171-8DB0-E50DA4D55038"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpotifyClone/Presentation/Main/MainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "extraContentView"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6722AF8-EE7F-40F2-9750-8FFBB8638E4D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpotifyClone/Presentation/Main/ViewModel/AudioPlayerManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "didTapOnTrack(track:playList:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A6722AF8-EE7F-40F2-9750-8FFBB8638E4D - 872dacf56a275a9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpotifyClone.AudioPlayerManager.didTapOnTrack(track: SpotifyClone.TopTrack, playList: Swift.Array&lt;SpotifyClone.TopTrack&gt;) -&gt; ()"
+                  moduleName = "SpotifyClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavoadolfovilladamolina/Documents/Apps/SpotifyClone/SpotifyClone/Presentation/Main/ViewModel/AudioPlayerManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "170"
+                  endingLineNumber = "170"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "A6722AF8-EE7F-40F2-9750-8FFBB8638E4D - 872dacf56a275bc4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpotifyClone.AudioPlayerManager.didTapOnTrack(track: SpotifyClone.TopTrack, playList: Swift.Array&lt;SpotifyClone.TopTrack&gt;) -&gt; ()"
+                  moduleName = "SpotifyClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavoadolfovilladamolina/Documents/Apps/SpotifyClone/SpotifyClone/Presentation/Main/ViewModel/AudioPlayerManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "176"
+                  endingLineNumber = "176"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

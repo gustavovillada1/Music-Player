@@ -7,11 +7,10 @@
 
 import Foundation
 
-struct Track {
-    let id: String
+struct TopTrack {
+    let id: Int
     let title: String
-    let link: String
     let preview: String
-    let artist: TrackArtist
-    let album: TrackAlbum
+    let artistName: String
+    let albumImage: String
 }

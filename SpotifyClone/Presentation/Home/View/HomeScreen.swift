@@ -11,47 +11,94 @@ import SwiftUIComponentsKit
 struct HomeScreen<ViewModel: HomeViewModelProtocol>: View {
     @StateObject var viewModel: ViewModel
     @EnvironmentObject var playerManager: AudioPlayerManager
-    
+    @EnvironmentObject var navigation: AppNavigation
+
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack {
-                topArtistsView
-                topSongsView
-                recommendedForYouView
-                Spacer()
+        ZStack {
+            ScrollView(showsIndicators: false) {
+                VStack {
+                    topArtistsView
+                    topTracksView
+                    topPlayListsView
+                    Spacer()
+                }
+            }.onAppear{
+                viewModel.onAppear()
             }
-        }.onAppear{
-            viewModel.onAppear()
+            NavigationLink(
+                destination: PlayListWireframe.getPlayListView(playListId: viewModel.playListIdSelected),
+                isActive: $navigation.isPlayListScreenActive,
+                label: {}
+            )
         }
     }
     
-    private var topSongsView: some View {
+    private var topTracksView: some View {
         VStack {
-            if viewModel.isLoadingTopTracks {
-                Text("Cargando")
-            } else {
-                SectionHeader(title: "Top Tracks")
-                    .addRightAction(subtitle: "")
-                    .padding(.horizontal, 20)
-                    .padding(.bottom, 20)
-                    .padding(.top, 10)
+            SectionHeader(title: "Top Tracks")
+                .padding(.horizontal, 20)
+                .padding(.bottom, 20)
+                .padding(.top, 10)
+            
+            switch viewModel.topTracksState {
+            case .empty:
+                Text("Vacio")
+            case .error(let error):
+                Text(error.localizedDescription)
+            case .success(let topTracks):
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHStack(spacing: 10) {
-                        ForEach(viewModel.topTracks, id: \.id) { track in
+                        ForEach(topTracks, id: \.id) { track in
+                            let isPlaying: Bool = track.id == playerManager.currentTrackId && playerManager.isPlaying
+                            let isFocused: Bool = track.id == playerManager.currentTrackId
                             ListHorizontalItem(
-                                imageURL: track.album.cover,
+                                imageURL: track.albumImage,
                                 title: track.title,
-                                subtitle: track.artist.name,
-                                style: .large, 
-                                isPlaying: track.id == playerManager.currentTrackId,
+                                subtitle: track.artistName,
+                                style: .large,
+                                isPlaying: isPlaying,
+                                isFocused: isFocused,
                                 action: {
                                     withAnimation {
-                                        playerManager.isExpanded = true
-                                        playerManager.play(trackId: track.id)
-                                        playerManager.setTrackPlaying(track: track)
-                                        playerManager.setAudioManagerPlayList(tracks: viewModel.topTracks)
+                                        playerManager.didTapOnTrack(track: track, playList: topTracks)
                                     }
                                 }
+                            )
+                        }
+                    }
+                }
+                .padding()
+            default:
+                Text("")
+            }
+
+        }
+    }
+    
+    private var topArtistsView: some View {
+        VStack {
+            SectionHeader(title: "Top Artists")
+                .padding(.horizontal, 20)
+                .padding(.bottom, 20)
+                .padding(.top, 80)
+            
+            switch viewModel.topArtistsState {
+            case .idle:
+                Text("Idle")
+            case .loading:
+                Text("Cargando")
+            case .empty:
+                Text("Vacío")
+            case .error(let error):
+                Text(error.localizedDescription)
+            case .success(let topArtists):
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 16) {
+                        ForEach(topArtists, id: \.id) { artist in
+                            ListHorizontalItem(
+                                imageURL: artist.pictureBig,
+                                title: artist.name,
+                                style: .compact, action: {}
                             )
                         }
                     }
@@ -61,50 +108,41 @@ struct HomeScreen<ViewModel: HomeViewModelProtocol>: View {
         }
     }
     
-    private var topArtistsView: some View {
+    private var topPlayListsView: some View {
         VStack {
-            SectionHeader(title: "Top Artists")
-                .addRightAction(subtitle: "")
-                .padding(.horizontal, 20)
-                .padding(.bottom, 20)
-                .padding(.top, 80)
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 16) {
-                    ForEach(0..<5) { i in
-                        ListHorizontalItem(
-                            imageURL: "",
-                            title: "Artist \(i + 1)",
-                            subtitle: "Pop",
-                            style: .medium, action: {}
-                        )
-                    }
-                }
-            }
-            .padding()
-        }
-    }
-    
-    private var recommendedForYouView: some View {
-        VStack {
-            SectionHeader(title: "Genders")
-                .addRightAction(subtitle: "")
+            SectionHeader(title: "Top Playlists")
                 .padding(.horizontal, 20)
                 .padding(.bottom, 20)
                 .padding(.top, 10)
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 16) {
-                    ForEach(0..<5) { i in
-                        ListHorizontalItem(
-                            imageURL: "",
-                            title: "Reggaeton \(i + 1)",
-                            subtitle: "Pop",
-                            style: .compact, action: {}
-                        )
+            switch viewModel.topPlayListsState {
+            case .idle:
+                Text("Idle")
+            case .loading:
+                Text("Cargando")
+            case .empty:
+                Text("Vacío")
+            case .error(let error):
+                Text(error.localizedDescription)
+            case .success(let topPlayLists):
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 16) {
+                        ForEach(topPlayLists, id: \.id) { topPlayList in
+                            ListHorizontalItem(
+                                imageURL: topPlayList.pictureBig,
+                                title: topPlayList.title,
+                                subtitle: topPlayList.user.name,
+                                style: .medium, action: {
+                                    navigation.isPlayListScreenActive = true
+                                    viewModel.playListIdSelected = topPlayList.id
+                                }
+                            )
+                        }
                     }
                 }
+                .padding()
+                .padding(.bottom, 200)
             }
-            .padding()
-            .padding(.bottom, 200)
+
         }
     }
 }
